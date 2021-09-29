@@ -3,7 +3,7 @@ import random
 import string
 import unittest
 
-from rekursion import *
+from loesung import *
 
 
 class TestRekursionenMitZahlen(unittest.TestCase):
