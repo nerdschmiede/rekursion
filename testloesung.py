@@ -68,6 +68,10 @@ class TestRekursionenMitText(unittest.TestCase):
         for stelle, buchstabe in enumerate(alphabet):
             self.assertEqual(finde(buchstabe, alphabet), stelle)
 
+    def test_finde_nicht(self):
+        alphabet = string.ascii_lowercase
+        self.assertEqual(finde('A', alphabet), -1)
+
     def test_ersetzen(self):
         self.assertEqual(ersetze(' ', '', "Python Ist Toll"), "PythonIstToll")
 

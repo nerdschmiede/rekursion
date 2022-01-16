@@ -1,5 +1,5 @@
 """
-Dieses Module enthält rekursive Lösungen zu einer Reihe von Fragestellungen sortiert nach den Eingaben.
+Dieses Modul enthält rekursive Lösungen zu einer Reihe von Fragestellungen sortiert nach den Eingaben.
 
 Eingaben sind:
 - Zahlen
@@ -98,7 +98,7 @@ def ist_palindrom(wort: str) -> bool:
 
 
 def finde(buchstabe: str, text: str) -> int:
-    if len(text) == 0:
+    if len(text) == 0 or buchstabe not in text:
         return -1
     else:
         naechster_buchstabe = text[0]
